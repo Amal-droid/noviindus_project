@@ -1,0 +1,10 @@
+{% extends 'adsection/ad_dashboard.html' %}
+{% block content %}
+<div class = 'card'>
+<form method="POST"> {% csrf_token %}
+{{ form.as_p }}
+    <input type="submit" submit>
+</form>
+   
+    {% endblock %}
+</div>
